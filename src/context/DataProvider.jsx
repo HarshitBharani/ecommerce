@@ -1,5 +1,6 @@
+import axios from "axios";
 import { createContext, useContext, useEffect, useReducer } from "react";
-import { MockPromise } from "../Database";
+
 import { DataReducer, intialState } from "../reducer/dataReducer";
 
 const DataContext = createContext();
@@ -10,8 +11,13 @@ export function DataProvider({ children }) {
   useEffect(() => {
     (async function () {
       try {
-        const data = await MockPromise(true);
-        dispatch({ type: "INITIALIZE_PRODUCTS", payload: JSON.parse(data) });
+        const data = await axios.get(
+          "https://e-commerce-newServer.harshitbharani.repl.co/products"
+        );
+        dispatch({
+          type: "INITIALIZE_PRODUCTS",
+          payload: data.data,
+        });
       } catch (error) {
         console.log(error);
       }

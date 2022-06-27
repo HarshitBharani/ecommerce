@@ -2,10 +2,10 @@ import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/Navbar";
 
-import Cart from "./Cart";
-import Home from "./home";
-import Wishlist from "./Wishlist";
-import Login from "./Login";
+import Cart from "./pages/Cart";
+import Home from "./pages/home";
+import Wishlist from "./pages/Wishlist";
+import Login from "./pages/Login";
 
 function App() {
   return (

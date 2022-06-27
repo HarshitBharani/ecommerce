@@ -1,0 +1,6 @@
+.container {
+  margin-top: 10vh;
+  display: grid;
+  grid-template-columns: 15% 84%;
+  gap: 1%;
+}

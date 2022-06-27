@@ -10,30 +10,34 @@ export default function Navbar() {
       <ul className="nav-container">
         <li>
           <Link to="/" className="Link img-container logo-container">
-            <img className="logo" src={logo} alt="logo" />
+            <img className="logo nav-img" src={logo} alt="logo" />
           </Link>
         </li>
         <li>
-          <Link className="Link" to="/">
+          <Link className="Link " to="/">
             Home
           </Link>
         </li>
         <li>
-          <input type="search" placeholder="search"></input>
+          <input
+            className="searchbar"
+            type="search"
+            placeholder="search"
+          ></input>
         </li>
         <li>
           <Link className="Link img-container" to="/wishList">
-            <img src={wishlistImg} alt="" />
+            <img className="nav-img" src={wishlistImg} alt="WishList" />
           </Link>
         </li>
         <li>
           <Link className="Link img-container" to="/cart">
-            <img src={cartImg} alt="" srcset="" />
+            <img className="nav-img" src={cartImg} alt="Cart" srcset="" />
           </Link>
         </li>
         <li>
-          <Link to="/login">
-            <img src={userImg} alt="" />
+          <Link className="Link img-container" to="/login">
+            <img src={userImg} alt="userdetails" />
           </Link>
         </li>
       </ul>

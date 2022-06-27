@@ -1,0 +1,28 @@
+.product-container {
+  border: 0.2rem solid black;
+  margin: 0.5rem;
+  max-width: 250px;
+  height: 300px;
+  padding: 0.3rem;
+}
+.discription {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.product-img {
+  width: 100%;
+  height: auto;
+}
+h3,
+h4,
+p {
+  margin: 0.2rem;
+}
+h3 {
+  white-space: nowrap;
+  overflow: hidden;
+}
+button {
+  width: 100%;
+}

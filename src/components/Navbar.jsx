@@ -32,7 +32,7 @@ export default function Navbar() {
         </li>
         <li>
           <Link className="Link img-container" to="/cart">
-            <img className="nav-img" src={cartImg} alt="Cart" srcset="" />
+            <img className="nav-img" src={cartImg} alt="Cart" />
           </Link>
         </li>
         <li>

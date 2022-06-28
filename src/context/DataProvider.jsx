@@ -31,7 +31,8 @@ export function DataProvider({ children }) {
         cart: state.cart,
         wishlist: state.wishlist,
         sortBy: state.sortBy,
-        filterCatogories: state.filterCatogories,
+        filter: state.filter,
+        includeOutOfStock: state.includeOutOfStock,
         dispatch,
       }}
     >

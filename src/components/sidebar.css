@@ -1,6 +1,14 @@
 .sidebar {
-  padding: 1rem 0.5rem 0 0.5rem;
+  padding: 1rem 1rem 0 0.5rem;
+
+  height: 100vh;
 }
 .sort-container {
+  margin-top: 1rem;
+}
+.filter-container {
+  margin-top: 1rem;
+}
+.checkbox {
   margin-top: 1rem;
 }

@@ -1,6 +1,5 @@
 nav {
-  border-bottom: 1px solid gray;
-  background-color: aliceblue;
+  background-color: #38bdf8;
   width: 100%;
   position: fixed;
   top: 0%;
@@ -12,10 +11,13 @@ nav {
   list-style-type: none;
 
   display: flex;
+  align-items: baseline;
 }
-input {
-  padding: 0.2rem;
+.logo- {
+  display: inline-block;
+  margin: auto 0;
 }
+
 li {
   margin-right: 2rem;
 }
@@ -23,8 +25,9 @@ li:nth-child(2) {
   margin-right: auto;
 }
 li:nth-child(3) {
-  margin: auto;
+  margin: 0 auto;
   width: 30%;
+  align-items: center;
 }
 .img-container {
   width: 2px;
@@ -32,6 +35,8 @@ li:nth-child(3) {
 }
 .searchbar {
   width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 0;
 }
 
 img {
@@ -41,7 +46,19 @@ img {
   object-position: bottom;
 }
 @media only screen and (max-width: 600px) {
+  nav {
+    height: 8vh;
+  }
   li:nth-child(3) {
     display: none;
+  }
+  li:nth-child(2) {
+    display: none;
+  }
+  .nav-container {
+    padding-left: 1rem;
+  }
+  li:nth-child(4) {
+    margin-left: auto;
   }
 }

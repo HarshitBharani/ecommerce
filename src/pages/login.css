@@ -1,0 +1,22 @@
+.input-container {
+  margin: 15% auto 0 auto;
+  display: flex;
+  padding: 2rem;
+  flex-direction: column;
+  height: 40vh;
+  width: 20%;
+  border: 1px solid grey;
+}
+
+.input-container > div > input {
+  border: 1px solid grey;
+  width: 80%;
+  padding: 0.5rem;
+  display: block;
+  height: 3vh;
+  font-size: 20px;
+}
+.input-container > div > label {
+  font-size: 20px;
+  font-weight: bold;
+}

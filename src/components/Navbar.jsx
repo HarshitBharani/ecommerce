@@ -8,12 +8,13 @@ export default function Navbar() {
   return (
     <nav>
       <ul className="nav-container">
-        <li>
+        <li className="logo-container">
           <Link to="/" className="Link img-container logo-container">
             <img className="logo nav-img" src={logo} alt="logo" />
+            <span>FireShop</span>
           </Link>
         </li>
-        <li>
+        <li className="Link-Home">
           <Link className="Link " to="/">
             Home
           </Link>

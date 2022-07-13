@@ -1,7 +1,9 @@
 .sidebar {
   padding: 1rem 1rem 0 0.5rem;
-
   height: 100vh;
+}
+.toggle-sidebar {
+  display: none;
 }
 .sort-container {
   margin-top: 1rem;
@@ -11,4 +13,27 @@
 }
 .checkbox {
   margin-top: 1rem;
+}
+input {
+  margin: 1rem 0px;
+}
+@media only screen and (max-width: 600px) {
+  .sidebar {
+    display: none;
+    padding: 0%;
+    height: 85vh;
+  }
+  .toggle-sidebar {
+    display: block;
+    width: 100%;
+    padding: 0.2rem;
+    background-color: aqua;
+  }
+  .sidebar-display {
+    display: block;
+  }
+  .sidebar-close {
+    position: absolute;
+    right: 10%;
+  }
 }

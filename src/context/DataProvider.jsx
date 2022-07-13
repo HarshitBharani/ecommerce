@@ -14,9 +14,10 @@ export function DataProvider({ children }) {
         const data = await axios.get(
           "https://e-commerce-newServer.harshitbharani.repl.co/products"
         );
+
         dispatch({
           type: "INITIALIZE_PRODUCTS",
-          payload: data.data,
+          payload: data.data.data,
         });
       } catch (error) {
         console.log(error);

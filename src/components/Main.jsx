@@ -13,6 +13,7 @@ export default function Main() {
         if (product.catogories === filter) {
           return true;
         }
+        return false;
       })
       .filter((product) => {
         if (includeOutOfStock === true) {
@@ -26,12 +27,12 @@ export default function Main() {
   }
 
   function sortProducts(products) {
-    if (sortBy === "HIGH_TO_LOW") {
+    if (sortBy === "LOW_TO_HIGH") {
       return filterProducts(products).sort((a, b) => {
         return a.price - b.price;
       });
     }
-    if (sortBy === "LOW_TO_HIGH") {
+    if (sortBy === "HIGH_TO_LOW") {
       return filterProducts(products).sort((a, b) => {
         return b.price - a.price;
       });

@@ -4,7 +4,10 @@ export default function ProductCard({
 }) {
   return (
     <div className="product-container" key={id}>
-      <img src={img} alt="" className="product-img" />
+      <div class="img-container">
+        <img src={img} alt="" className="product-img" />
+      </div>
+
       <h3 className="name ">{name}</h3>
       <p className="discription">{description}</p>
       <h4 className="price">{price}</h4>

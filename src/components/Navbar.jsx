@@ -14,18 +14,7 @@ export default function Navbar() {
             <span>FireShop</span>
           </Link>
         </li>
-        <li className="Link-Home">
-          <Link className="Link " to="/">
-            Home
-          </Link>
-        </li>
-        <li>
-          <input
-            className="searchbar"
-            type="search"
-            placeholder="search"
-          ></input>
-        </li>
+
         <li>
           <Link className="Link img-container" to="/wishList">
             <img className="nav-img" src={wishlistImg} alt="WishList" />

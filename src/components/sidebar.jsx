@@ -60,7 +60,7 @@ export default function Sidebar() {
               name="sort"
               value="LOW_TO_HIGH"
               onClick={addSort}
-              checked={sortBy === "LOW_TO_HIGH"}
+              defaultChecked={sortBy === "LOW_TO_HIGH"}
             />
             Price - Low to High
           </label>
